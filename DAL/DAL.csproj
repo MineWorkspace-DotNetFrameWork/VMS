@@ -60,6 +60,11 @@
     <Compile Include="Entities\Point.cs" />
     <Compile Include="Entities\Producer.cs" />
     <Compile Include="Entities\Vaccine.cs" />
+    <Compile Include="Migrations\202105111602521_AddORM.cs" />
+    <Compile Include="Migrations\202105111602521_AddORM.Designer.cs">
+      <DependentUpon>202105111602521_AddORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ORM\DataManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,6 +75,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202105111602521_AddORM.resx">
+      <DependentUpon>202105111602521_AddORM.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

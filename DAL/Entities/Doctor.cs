@@ -21,7 +21,7 @@ namespace DAL.Entities
         [StringLength(100)]
         public string Phone { get; set; }
         [Required]
-        [StringLength(100)
+        [StringLength(100)]
         public string Email { get; set; }
         public int HospitalId { get; set; }
         public virtual Hospital Hospital { get; set; }
