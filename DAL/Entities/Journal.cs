@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace DAL.Entities
 {
     public class Journal
     {
         public int Id { get; set; }
+        [DataType(DataType.Date)]
         public DateTime Date { get; set; }
         public int PersonId { get; set; }
         public virtual Person Person { get; set; }
